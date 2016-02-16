@@ -1,0 +1,5 @@
+$('#like').click(function(){
+   $('#like').click(function(){
+    $.post('/test');
+});
+});
