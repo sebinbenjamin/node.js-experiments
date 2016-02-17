@@ -20,11 +20,12 @@ app.get('/home',
     function(req,res)
     {
       console.log("Home requested");
-      var data = fs.readFile('./index.html', function (err, html) { if (err) { throw err;}
-      res.writeHeader(200, {"Content-Type": "text/html"});
+      var data = fs.readFile('index.html', function (err, html) { if (err) { throw err;}
+      res.writeHeader(200, {"Content-Type": "text/html"});     
       res.write(html);
-        });
       res.end();
+        });
+      
     }
   );
-app.listen(80);
+app.listen(80,'0.0.0.0');
