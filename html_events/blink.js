@@ -1,5 +1,5 @@
 var Gpio = require('onoff').Gpio,  
-  led = new Gpio(14, 'out'),      // Export GPIO #14 as an output. 
+  led = new Gpio(4, 'out'),      // Export GPIO #14 as an output. 
   iv;
 iv = setInterval(function () {
   led.writeSync(led.readSync() ^ 1); // 1 = on, 0 = off :) 
