@@ -8,7 +8,8 @@
   "author": "Sebin Benjamin",
   "dependencies": {
     "express": "4.x",
-    "mongodb": "~2.0"
+    "mongodb": "~2.0",
+    "socket.io": "^1.4.5"
   },
   "license": "ISC",
   "description": ""
