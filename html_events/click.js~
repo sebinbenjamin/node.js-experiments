@@ -1,5 +1,10 @@
-$('#like').click(function(){
-   $('#like').click(function(){
-    $.post('/test');
-});
-});
+var express = require('express');
+var app = express();
+app.get('/',
+    function(req,res)
+    {
+        res.send("express");
+        console.log("Express");
+    }
+);
+app.listen(3333);
